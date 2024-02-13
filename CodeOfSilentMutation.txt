@@ -1,0 +1,61 @@
+!pip install bioPython
+import Bio
+from Bio.Seq import Seq
+
+import random 
+
+Alternatives={'ATA':['ATC','ATT'],'ATC':['ATA','ATT'],'ATT':['ATA','ATC'],'ATG':['ATG'],
+              'ACA':['ACC','ACG','ACT'],'ACC':['ACA','ACG','ACT'],'ACG':['ACA','ACC','ACT'],
+              'ACT':['ACA','ACC','ACG'],'AAC':['AAT'],'AAT':['AAC'],'AAA':['AAG'],
+              'AAG':['AAA'],'AGC':['AGT'],'AGT':['AGC'],'AGA':['AGG'],'AGG':['AGA'],
+              'CTA':['CTC','CTG','CTT'],'CTC':['CTA','CTG','CTT'],'CTG':['CTC','CTA','CTT'],
+              'CTT':['CTC','CTG','CTA'],'CCA':['CCC','CCG','CCT'],'CCC':['CCA','CCG','CCT'],
+              'CCG':['CCA','CCC','CCT'],'CCT':['CCA','CCC','CCG'],'CAC':['CAT'],'CAT':['CAC'],
+              'CAA':['CAG'],'CAG':['CAA'],'CGA':['CGC','CGG','CGT'],'CGC':['CGA','CGG','CGT'],
+              'CGG':['CGC','CGA','CGT'],'CGT':['CGC','CGG','CGA'],'GTA':['GTC','GTG','GTT'],
+              'GTC':['GTA','GTG','GTT'],'GTG':['GTC','GTA','GTT'],'GTT':['GTC','GTG','GTA'],
+              'GCA':['GCC','GCG','GCT'],'GCC':['GCA','GCG','GCT'],'GCG':['GCC','GCA','GCT'],
+              'GCT':['GCC','GCG','GCA'],'GAC':['GAT'],'GAT':['GAC'],'GAA':['GAG'],
+              'GAG':['GAA'],'GGA':['GGC','GGG','GGT'],'GGC':['GGA','GGG','GGT'],
+              'GGG':['GGC','GGA','GGT'],'GGT':['GGC','GGG','GGA'],'TCA':['TCC','TCG','TCT'],
+              'TCC':['TCA','TCG','TCT'],'TCG':['TCC','TCA','TCT'],'TCT':['TCC','TCG','TCA'],
+              'TTC':['TTT'],'TTT':['TTC'],'TTA':['TTG'],'TTG':['TTA'],'TAC':['TAT'],
+              'TAT':['TAC'],'TGC':['TGT'],'TGT':['TGC'],'TGG':['TGG'],'TAA':['TAA'],
+              'TGA':['TGA'],'TAG':['TAG']
+              }
+
+
+
+import random
+
+def SilentMutation(RBD,n):
+    s=""
+    for i in range(0,len((RBD)),3):
+        s=s+RBD[i:i+3]+" "
+    Dna=s.split()
+    visited=[]
+    for _ in range(n):
+      randomCodon=random.randint(0,len(Dna)-1)
+      if randomCodon not in visited:
+        codon=Dna[randomCodon]
+        Alt_length=len(Alternatives[codon])
+        randomAlt=random.randint(0,Alt_length-1)
+        Dna[randomCodon]=Alternatives[codon][randomAlt]
+        visited.append(randomCodon)
+
+    mutatedRBD="".join(Dna)
+    return mutatedRBD
+    
+RBD="GTCCAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTTGGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATCAGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAGTGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGATTCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAAGATTGCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCTAACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCGGTATAGATTGTTTAGGAAGTCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCAAACCTTGTAATGGTGTTGAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAACCCACTAATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTACATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGTGTCAATTTC"
+mut=SilentMutation(RBD,80)
+print(mut)
+
+
+rbdSeq=Seq(GammaRBD)
+mutatedSeq=Seq(mutated)
+rbdp=rbdSeq.translate()
+mutatedp=mutatedSeq.translate()
+print(rbdp)
+print(mutatedp)
+print(rbdp==mutatedp)
+

@@ -1,0 +1,29 @@
+
+
+table = {
+        'ATA':'I',  'ATG':'M',
+        'ACA':'T',
+        'AAC':'N',  'AAA':'K',
+        'AGC':'S',  'AGA':'R',
+        'CTA':'L',
+        'CCA':'P',
+        'CAC':'H',  'CAA':'Q',
+        'GTA':'V',
+        'GCA':'A',
+        'GAC':'D','GAA':'E',
+        'GGA':'G',
+        'TCA':'S',
+        'TTC':'F',
+        'TAC':'Y',  'TAA':'_',
+        'TGC':'C',  'TGG':'W',
+    }
+
+dic ={}
+for i,j  in table.items():
+    dic[j]=i
+ 
+sample="CWYF"
+Dna=""
+for i in sample:
+    Dna=Dna+dic[i]
+print(Dna)

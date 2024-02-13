@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Covid Tester</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        #footer {
+            margin-top: 40px;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            height: 280px;
+            background: #aecbb4;
+            color: azure;
+            text-align: center;
+        }
+        
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 20%;
+            vertical-align: middle;
+        }
+        
+        .btn {
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .success {
+            border-color: #aecbb4;
+            color: #aecbb4;
+        }
+        
+        .success2 {
+            border-color: #b59771;
+            color: #b59771;
+        }
+        
+        .success:hover {
+            background-color: #aecbb4;
+            color: white;
+        }
+        
+        .header {
+            padding: 10px 16px;
+            background: #aecbb4;
+            color: #f1f1f1;
+        }
+        
+        .content {
+            padding: 16px;
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        .sticky+.content {
+            padding-top: 102px;
+        }
+        
+        .dot-flashing {
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #b59771;
+            color: #b59771;
+            animation: dotFlashing 1s infinite linear alternate;
+            animation-delay: 0.5s;
+        }
+        
+        .dot-flashing::before,
+        .dot-flashing::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 0;
+        }
+        
+        .dot-flashing::before {
+            left: -15px;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #b59771;
+            color: #b59771;
+            animation: dotFlashing 1s infinite alternate;
+            animation-delay: 0s;
+        }
+        
+        .dot-flashing::after {
+            left: 15px;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #b59771;
+            color: #b59771;
+            animation: dotFlashing 1s infinite alternate;
+            animation-delay: 1s;
+        }
+        
+        @keyframes dotFlashing {
+            0% {
+                background-color: #b59771;
+            }
+            50%,
+            100% {
+                background-color: #EAD7A5;
+            }
+        }
+        
+        .card {
+            /* Add shadows to create the "card" effect */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            height: 300px;
+            width: 500px;
+        }
+        
+        .container {
+            padding: 2px 16px;
+        }
+        
+        input[type=text] {
+            border: none;
+            border-bottom: 2px solid #836B51;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" id="myHeader">
+        <div style="font-size: 50px; text-align: center;">
+            Welcome to Covid Tester interface
+        </div>
+    </div>
+    <div class="container">
+        <svg viewBox="100 30 400 500" preserveAspectRatio="xMinYMin meet" height="1900" width="100%">
+        <path
+          d="M0,100 C150,200 350,0 500,130 L500,00 L0,0 Z"
+          style="stroke: none; fill: #aecbb4;"
+        ></path>
+      </svg>
+    </div>
+    <div style="margin-top:20% ; margin-left: 40%; font-size: 50px; color: #aecbb4;">
+        . . . Covid Mutations Tester
+    </div>
+    <div style="color: #836b51; text-align: center; font-size: 20px;">
+        <div style="
+          margin-top: 10%;
+
+          font-size: 40px;
+          color: #b59771;
+        ">
+            <i class="fa fa-handshake-o"></i> Welcome
+
+        </div>
+
+        <br /> We presented the first prediction model of Covid .
+        <br>we'd have an issue where corona is threatening everyone's lives
+        <br /> We are looking for new and improved ways to find covid-19 variants and detect it using new and improved technologies .
+        <br /> that aims to create a quicker way of finding and detecting covid-19 variants .
+        <br />Our tool can detect any new Covid sequance will infect human cell or not that based on RBD of covid you need to check.
+        <br /> so get RBD and enter it to check it
+    </div>
+    <div id="try" style="color: #836b51; text-align: center; font-size: 20px;">
+        <div style="
+          margin-top: 7%;
+          font-size: 40px;
+          color: #b59771;
+        ">
+            <i class="fa fa-cogs"></i> Try it
+        </div>
+        <br>
+        <div style="margin-left: 50%;">
+            <div class="col-3">
+                <div class="snippet" data-title=".dot-flashing">
+                    <div class="stage">
+                        <div class="dot-flashing"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div style="margin-left: 34%;">
+            <div class="card">
+                <div class="container" style="color: #B59771;">
+                    <br /> enter RBD sequence:
+                    <br />
+                    <form name="actorInsert" action="{{ url_for('index')}}" method="post" onSubmit="return ValidateActInsert()">
+                        <input type="text" id="Seq" name="seq" minlength="600" placeholder="ATGXXXXXXXXXXXXXXXXX" required>
+                        <br />
+                        <br />
+                        <div>
+                            <button class="btn success2" type="submit">Enter</button>
+                        </div>
+                        <br />
+                        <div style="font-size: small; color:#B59771 ; ">
+                            please make sure that your sequence passed by <a href="#instructions">instructions below</a>
+                            <br /> in order to get more accurate result
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="instructions" style="color:  #aecbb4;  margin-top: 100px;">
+        Sequance you need to Check Must be:<br>
+        <div style="color:#836B51 ; margin-left:3% ;"><i class="fa fa-check-square"></i> it is from RBD region<br>
+            <i class="fa fa-check-square"></i> it is length minmum 600<br>
+            <i class="fa fa-check-square"></i> it is preferrd to start with ATG<br>
+            <i class="fa fa-check-square"></i> it is DNA form Not protein<br>
+            <i class="fa fa-check-square"></i> it is DNA means not contain any chracter except A,C,G,T in Highercase</div>
+    </div>
+    <div id="footer">
+        Copyright 2022 Web.com Group, Inc. All rights reserved. All registered trademarks herein are the property of their respective owners.
+        <br>
+        <br>
+
+        <div style="font-size: 20px;"> <i class="fa fa-envelope-o"></i> Contact US</div>
+        <br /> We are a team from Cairo University's college of computers and information .
+        <br /> We are looking for new and improved ways to find covid-19 variants and detecting using new and improved technologies
+        <br /> that aims to create a quicker means of finding and detecting covid-19 variants
+        <br />For any information, e-mail addresses : nada@gmail.com Omar@yahoo.com lina@gmail.com andrew@gmail.com sara@yahoo.com
+    </div>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    window.onscroll = function() {
+        myFunction()
+    }
+
+    var header = document.getElementById('myHeader')
+    var sticky = header.offsetTop
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add('sticky')
+        } else {
+            header.classList.remove('sticky')
+        }
+    }
+
+    function ValidateActInsert() {
+        var specialChars = /[^A G C T ]/g;
+        if (document.actorInsert.seq.value.match(specialChars)) {
+            alert("Sequence Must be DNA please check instructions ")
+            document.actorInsert.seq.focus();
+            return false;
+        }
+        return (true);
+    }
+</script>
+
+</html>

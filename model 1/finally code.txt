@@ -1,0 +1,116 @@
+#our imports
+import csv
+import tensorflow as tf
+import numpy as np
+import matplotlib.pyplot as plt
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Flatten, LSTM, Dropout, Activation, Embedding, Bidirectional,SimpleRNN
+import nltk
+from nltk.corpus import stopwords
+import pandas as pd
+
+
+# prepare data
+articles = []
+labels = []
+with open("/content/final data.csv", 'r') as csvfile:
+    reader = csv.reader(csvfile, delimiter=',')
+    #read file 
+    for row in reader:
+        # labels will have word of + or - 
+        labels.append(row[0])
+        # article has sequence 
+        articles.append(row[1])
+
+
+#split 80:20 train and test
+training_portion = 0.8
+train_size = int(len(articles) * training_portion)
+train_articles = articles[0: train_size]
+train_labels = labels[0: train_size]
+validation_articles = articles[train_size:]
+validation_labels = labels[train_size:]
+
+
+
+vocab_size = 6200
+max_length = 200
+oov_tok = '<OOV>' #  Out of Vocabulary
+#take tokenizer object for sequence
+tokenizer = Tokenizer(num_words = vocab_size, oov_token=oov_tok)
+#update internal text on seq
+tokenizer.fit_on_texts(train_articles)
+##################### on train seq
+#from google.colab import drive
+#drive.mount('/content/drive')
+
+#convert txt to sequence
+train_sequences = tokenizer.texts_to_sequences(train_articles)
+#ensure all have same length
+train_padded = pad_sequences(train_sequences, maxlen=max_length,)
+##################### on validation seq
+validation_sequences = tokenizer.texts_to_sequences(validation_articles)
+validation_padded = pad_sequences(validation_sequences, maxlen=max_length)
+
+
+#labels  inform of 0(-) and 1(+) 
+data_frame = pd.DataFrame(train_labels, columns=["type"])
+df_one = pd.get_dummies(data_frame["type"])
+df_two = pd.concat((df_one, data_frame), axis=1)
+df_two = df_two.drop(["type"], axis=1)
+df_two = df_two.drop(["Negative"], axis=1)
+trainlabelresult = df_two.rename(columns={"Positive": "type"})
+
+
+data_frame2 = pd.DataFrame(validation_labels, columns=["type"])
+df_one2 = pd.get_dummies(data_frame2["type"])
+df_two2 = pd.concat((df_one2, data_frame2), axis=1)
+df_two2 = df_two2.drop(["type"], axis=1)
+df_two2 = df_two2.drop(["Negative"], axis=1)
+validationlabelresult = df_two2.rename(columns={"Positive": "type"})
+
+
+#our model
+embedding_dim = 64
+model = Sequential()
+model.add(Embedding(vocab_size,embedding_dim ))
+model.add(Dropout(0.2))
+model.add(Bidirectional(LSTM(embedding_dim)))
+model.add(Dropout(0.2))
+model.add(Dense(1,activation='sigmoid'))
+opt = tf.keras.optimizers.Adam(lr=0.002, decay=1e-6)
+model.compile(loss='binary_crossentropy',optimizer=opt,metrics=['accuracy'])
+num_epochs = 20
+history = model.fit(train_padded, trainlabelresult, epochs=num_epochs,
+                    validation_data=(validation_padded, validationlabelresult),
+                    verbose=2)
+
+
+txt=["AACGTAGTAA GAGGATGGGT ATTCGGATCA ACAATGAACA ACAAATCACA ATCAGTAATA ATAATAAACA ACTCAACAAA CGTAGTAATA AGAGCATGCA ACTTCGAACT ATGCGACAAC CCATTCTTCG CAGTATCAAA  "]
+seq = tokenizer.texts_to_sequences(txt)
+padded = pad_sequences(seq, maxlen=max_length)
+pred=model.predict(padded)
+print(pred)
+predicted=0
+if pred>=0.5:
+  predicted=1
+if predicted==1:
+  print("sequance is positive ")
+else:
+  print("sequance is negative ")
+
+
+txt=["CCAAACATAA CAAACCTATG CCCATTCGGA GAAGTATTCA ACGCAACAAG ATTCGCATCA GTATACGCAT GGAACAGAAA AAGAATATCA AACTGCGTAG CAGACTACTC AGTACTATAC AACTCAGCAT CATTCTCAAC ATTCAAATGC TACGGAGTAT CACCAACAAA ACTAAACGAC CTATGCTTCA CAAACGTATA CGCAGACTCA TTCGTAATAA GAGGAGACGA AGTAAGACAA ATAGCACCAG GACAAACAGG AAAAATAGCA GACTACAACT ACAAACTACC AGACGACTTC ACAGGATGCG TAATAGCATG GAACTCAAAC AACCTAGACT CAAAAGTAGG AGGAAACTAC AACTACAGAT ACAGACTATT CAGAAAATCA AACCTAAAAC CATTCGAAAG AGACATATCA ACAGAAATAT ACCAAGCAGG ATCAAAACCA TGCAACGGAG TAGAAGGATT CAACTGCTAC TTCCCACTAC AATCATACGG ATTCCAACCA ACAAACGGAG TAGGATACCA ACCATACAGA GTAGTAGTAC TATCATTCGA ACTACTACAC GCACCAGCAA CAGTATGCGG ACCAAAAAAA TCA "]
+seq = tokenizer.texts_to_sequences(txt)
+padded = pad_sequences(seq, maxlen=max_length)
+pred=model.predict(padded)
+print(pred)
+predicted=0
+if pred>=0.5:
+  predicted=1
+if predicted==1:
+  print("sequance is positive ")
+else:
+  print("sequance is negative ")

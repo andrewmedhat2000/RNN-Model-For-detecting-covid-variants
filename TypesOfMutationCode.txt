@@ -1,0 +1,53 @@
+try:
+    import google.colab
+    # Running on Google Colab, so install Biopython first
+    !pip install biopython
+except ImportError:
+    pass
+import random
+import Bio
+from Bio.Seq import Seq
+
+def MutateBySubs(RBD,n):
+  for _ in range(n):
+    random_position=random.randint(0,len(RBD)-1)
+    random_nucleotide=random.choice('ACGT')
+    if(random_nucleotide!=RBD[random_position]):
+      temp = list(RBD)
+      temp[random_position] = random_nucleotide
+      RBD = "".join(temp)
+  return RBD
+def MutateByInsertion(RBD,n):
+  for _ in range(n):
+    random_position=random.randint(0,len(RBD)-1)
+    random_nucleotide=random.choice('ACGT')
+    split_RBD = RBD.split()
+    split_RBD.insert(random_position,random_nucleotide)
+    RBD = "".join(split_RBD)
+  return RBD
+
+def MutateByDeletion(RBD,n):
+  for _ in range(n):
+    random_position=random.randint(0,len(RBD)-1)
+    random_nucleotide=random.choice('ACGT')
+    temp = list(RBD)
+    temp.pop(random_position)
+    RBD = "".join(temp)
+  return RBD
+
+RBD="CAACCAACAGAATCTATTGTTAGATTTCCTAATATTACAAACTTGTGCCCTTTTGGTGAAGTTTTTAACGCCACCAGATTTGCATCTGTTTATGCTTGGAACAGGAAGAGAATCAGCAACTGTGTTGCTGATTATTCTGTCCTATATAATTCCGCATCATTTTCCACTTTTAAGTGTTATGGAGTGTCTCCTACTAAATTAAATGATCTCTGCTTTACTAATGTCTATGCAGATTCATTTGTAATTAGAGGTGATGAAGTCAGACAAATCGCTCCAGGGCAAACTGGAAATATTGCTGATTATAATTATAAATTACCAGATGATTTTACAGGCTGCGTTATAGCTTGGAATTCTAACAATCTTGATTCTAAGGTTGGTGGTAATTATAATTACCTGTATAGATTGTTTAGGAAGTCTAATCTCAAACCTTTTGAGAGAGATATTTCAACTGAAATCTATCAGGCCGGTAGCACACCTTGTAATGGTGTTAAAGGTTTTAATTGTTACTTTCCTTTACAATCATATGGTTTCCAACCCACTTATGGTGTTGGTTACCAACCATACAGAGTAGTAGTACTTTCTTTTGAACTTCTACATGCACCAGCAACTGTTTGTGGACCTAAAAAGTCTACTAATTTGGTTAAAAACAAATGTGTCAATTTCAAC"
+Protein=Seq(RBD).translate()
+
+#print(Protein)
+
+for _ in range(5):
+  Mutated_RBD=Seq(MutateBySubs(RBD))
+  print(Mutated_RBD)
+  Mutated_Protein=Mutated_RBD.translate()
+  print(Mutated_Protein) 
+
+for _ in range(5):
+  Mutated_RBD=Seq(MutateByDeletion(RBD))
+  print(Mutated_RBD)
+  Mutated_Protein=Mutated_RBD.translate()
+  print(Mutated_Protein) 

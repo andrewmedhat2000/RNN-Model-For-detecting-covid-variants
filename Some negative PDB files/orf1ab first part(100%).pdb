@@ -1,0 +1,530 @@
+TITLE     SWISS-MODEL SERVER (https://swissmodel.expasy.org)
+TITLE    2 orf1ab second frame 1st part
+EXPDTA    THEORETICAL MODEL (SWISS-MODEL SERVER)
+AUTHOR    SWISS-MODEL SERVER (SEE REFERENCE IN JRNL Records)
+REVDAT   1   25-JUN-22 1MOD    1       16:43
+JRNL        AUTH   A.WATERHOUSE,M.BERTONI,S.BIENERT,G.STUDER,G.TAURIELLO,
+JRNL        AUTH 2 R.GUMIENNY,F.T.HEER,T.A.P.DE BEER,C.REMPFER,L.BORDOLI,
+JRNL        AUTH 3 R.LEPORE,T.SCHWEDE
+JRNL        TITL   SWISS-MODEL: HOMOLOGY MODELLING OF PROTEIN STRUCTURES AND
+JRNL        TITL 2 COMPLEXES
+JRNL        REF    NUCLEIC.ACIDS.RES..           V.  46 W296  2018
+JRNL        PMID   29788355
+JRNL        DOI    10.1093/nar/gky427
+REMARK   1
+REMARK   1 REFERENCE 1
+REMARK   1  AUTH   S.BIENERT,A.WATERHOUSE,T.A.P.DE BEER,G.TAURIELLO,G.STUDER,
+REMARK   1  AUTH 2 L.BORDOLI,T.SCHWEDE
+REMARK   1  TITL   THE SWISS-MODEL REPOSITORY - NEW FEATURES AND FUNCTIONALITY
+REMARK   1  REF    NUCLEIC.ACIDS.RES..           V.  45       2017
+REMARK   1  REFN                   ISSN 0305-1048
+REMARK   1  PMID   27899672
+REMARK   1  DOI    10.1093/nar/gkw1132
+REMARK   1
+REMARK   1 REFERENCE 2
+REMARK   1  AUTH   N.GUEX,M.C.PEITSCH,T.SCHWEDE
+REMARK   1  TITL   AUTOMATED COMPARATIVE PROTEIN STRUCTURE MODELING WITH
+REMARK   1  TITL 2 SWISS-MODEL AND SWISS-PDBVIEWER: A HISTORICAL PERSPECTIVE
+REMARK   1  REF    ELECTROPHORESIS               V.  30       2009
+REMARK   1  REFN                   ISSN 0173-0835
+REMARK   1  PMID   19517507
+REMARK   1  DOI    10.1002/elps.200900140
+REMARK   1
+REMARK   1 REFERENCE 3
+REMARK   1  AUTH   G.STUDER,G.TAURIELLO,S.BIENERT,M.BIASINI,N.JOHNER,T.SCHWEDE
+REMARK   1  TITL   PROMOD3 - A VERSATILE HOMOLOGY MODELLING TOOLBOX
+REMARK   1  REF    PLOS COMP. BIOL.              V.  17       2021
+REMARK   1  REFN                   ISSN 
+REMARK   1  PMID   33507980
+REMARK   1  DOI    https://doi.org/10.1371/journal.pcbi.1008667
+REMARK   1
+REMARK   1 REFERENCE 4
+REMARK   1  AUTH   G.STUDER,C.REMPFER,A.WATERHOUSE,R.GUMIENNY,J.HAAS,T.SCHWEDE
+REMARK   1  TITL   QMEANDISCO - DISTANCE CONSTRAINTS APPLIED ON MODEL QUALITY 
+REMARK   1  TITL 2 ESTIMATION
+REMARK   1  REF    BIOINFORMATICS                V.  36       2020
+REMARK   1  REFN                   ISSN 
+REMARK   1  PMID   31697312
+REMARK   1  DOI    https://doi.org/10.1093/bioinformatics/btz828
+REMARK   1
+REMARK   1 REFERENCE 5
+REMARK   1  AUTH   P.BENKERT,M.BIASINI,T.SCHWEDE
+REMARK   1  TITL   TOWARD THE ESTIMATION OF THE ABSOLUTE QUALITY OF INDIVIDUAL
+REMARK   1  TITL 2 PROTEIN STRUCTURE MODELS
+REMARK   1  REF    BIOINFORMATICS                V.  27       2011
+REMARK   1  REFN                   ISSN 1367-4803
+REMARK   1  PMID   21134891
+REMARK   1  DOI    10.1093/bioinformatics/btq662
+REMARK   1
+REMARK   1 REFERENCE 6
+REMARK   1  AUTH   M.BERTONI,F.KIEFER,M.BIASINI,L.BORDOLI,T.SCHWEDE
+REMARK   1  TITL   MODELING PROTEIN QUATERNARY STRUCTURE OF HOMO- AND
+REMARK   1  TITL 2 HETERO-OLIGOMERS BEYOND BINARY INTERACTIONS BY HOMOLOGY
+REMARK   1  REF    SCI.REP.                      V.   7       2017
+REMARK   1  REFN                   ISSN
+REMARK   1  PMID   28874689
+REMARK   1  DOI    10.1038/s41598-017-09654-8
+REMARK   1
+REMARK   1 DISCLAIMER
+REMARK   1 The SWISS-MODEL SERVER produces theoretical models for proteins.
+REMARK   1 The results of any theoretical modelling procedure is
+REMARK   1 NON-EXPERIMENTAL and MUST be considered with care. These models may
+REMARK   1 contain significant errors. This is especially true for automated
+REMARK   1 modeling since there is no human intervention during model
+REMARK   1 building. Please read the header section and the logfile carefully
+REMARK   1 to know what templates and alignments were used during the model
+REMARK   1 building process. All information by the SWISS-MODEL SERVER is
+REMARK   1 provided "AS-IS", without any warranty, expressed or implied.
+REMARK   2
+REMARK   2 COPYRIGHT NOTICE
+REMARK   2 This SWISS-MODEL protein model is copyright. It is produced by the
+REMARK   2 SWISS-MODEL server, developed by the Computational Structural
+REMARK   2 Biology Group at the SIB Swiss Institute of Bioinformatics at the
+REMARK   2 Biozentrum, University of Basel (https://swissmodel.expasy.org). This
+REMARK   2 model is licensed under the CC BY-SA 4.0 Creative Commons
+REMARK   2 Attribution-ShareAlike 4.0 International License
+REMARK   2 (https://creativecommons.org/licenses/by-sa/4.0/legalcode), i.e. you
+REMARK   2 can copy and redistribute the model in any medium or format,
+REMARK   2 transform and build upon the model for any purpose, even
+REMARK   2 commercially, under the following terms:
+REMARK   2 Attribution - You must give appropriate credit, provide a link to
+REMARK   2 the license, and indicate if changes were made. You may do so in any
+REMARK   2 reasonable manner, but not in any way that suggests the licensor
+REMARK   2 endorses you or your use. When you publish, patent or distribute
+REMARK   2 results that were fully or partially based on the model, please cite
+REMARK   2 the corresponding papers mentioned under JRNL.
+REMARK   2 ShareAlike - If you remix, transform, or build upon the material,
+REMARK   2 you must distribute your contributions under the same license as the
+REMARK   2 original.
+REMARK   2 No additional restrictions - you may not apply legal terms or
+REMARK   2 technological measures that legally restrict others from doing
+REMARK   2 anything the license permits.
+REMARK   2 Find a human-readable summary of (and not a substitute for) the
+REMARK   2 CC BY-SA 4.0 license at this link:
+REMARK   2 https://creativecommons.org/licenses/by-sa/4.0/
+REMARK   3 
+REMARK   3 MODEL INFORMATION
+REMARK   3  ENGIN   PROMOD3
+REMARK   3  VERSN   3.2.1
+REMARK   3  OSTAT   monomer
+REMARK   3  OSRSN   PREDICTION
+REMARK   3  QSPRD   0.000
+REMARK   3  GMQE    NA
+REMARK   3  QMNV    4.3.0
+REMARK   3  QMNDG   0.65
+REMARK   3  MODT    FALSE
+REMARK   3 
+REMARK   3 TEMPLATE 1
+REMARK   3  PDBID   6zme
+REMARK   3  CHAIN   CF
+REMARK   3  MMCIF   HC
+REMARK   3  PDBV    2022-06-10
+REMARK   3  SMTLE   6zme.81.A
+REMARK   3  SMTLV   2022-06-16
+REMARK   3  MTHD    ELECTRON MICROSCOPY 0.00 A
+REMARK   3  FOUND   HHblits
+REMARK   3  GMQE    0.00
+REMARK   3  SIM     0.61
+REMARK   3  SID     100.00
+REMARK   3  OSTAT   monomer
+REMARK   3  ALN A TRG FPGNKPTNFRSLVDLFSKRTLKSVWLSLGCMLSALTQYNLITVVDRTRVTLLSSAGCL
+REMARK   3  ALN A TRG RFRPCCSRSSAHLGFVRVPKGKMESLVPGFNEKTHVQLSLPVLQVRDVLVRGFGDSVE
+REMARK   3  ALN A TRG EVLSEARQHLKDGTCGLVEVEKGVLPQLEQPYVFIKRSDARTAPHGHVMVELVAELEG
+REMARK   3  ALN A TRG IQYGRSGETLGVLVPHVGEIPVAYRKVLLRKNGNKGAGGHSYGADLKSFDLGDELGTD
+REMARK   3  ALN A TRG PYEDFQENWNTKHSSGVTRELMRELNGGAYTRYVDNNFCGPDGYPLECIKDLLARAGK
+REMARK   3  ALN A TRG ASCTLSEQLDFIDTKRGVYCCREHEHEIAWYTERSEKSYELQTPFEIKLAKKFDIFNG
+REMARK   3  ALN A TRG ECPNFVFPLNSIIKTIQPRVEKKKLDGFMGRIRSVYPVASPNECNQMCLSTLMKCDHC
+REMARK   3  ALN A TRG GETSWQTGDFVKATCEFCGTENLTKEGATTCGYLPQNAVVKIYCPACHNSEVGPEHSL
+REMARK   3  ALN A TRG AEYHNESGLKTILRKGGRTIAFGGCVFSYVGCHNKCAYWVPRASANIGCNHTGVVGEG
+REMARK   3  ALN A TRG SEGLNDNLLEILQKEKVNINIVGDFKLNEEIAIILASFSASTSAFVETVKGLDYKAFK
+REMARK   3  ALN A TRG QIVESCGNFKVTKGKAKKGAWNIGEQKSILSPLYAFASEAARVVRSIFSRTLETAQNS
+REMARK   3  ALN A TRG VRVLQKAAITILDGISQYSLRLIDAMMFTSDLATNNLVVMAYITGGVVQLTSQWLTNI
+REMARK   3  ALN A TRG FGTVYEKLKPVLDWLEEKFKEGVEFLRDGWEIVKFISTCACEIVGGQIVTCAKEIKES
+REMARK   3  ALN A TRG VQTFFKLVNKFLALCADSIIIGGAKLKALNLGETFVTHSKGLYRKCVKSREETGLLMP
+REMARK   3  ALN A TRG LKAPKEIIFLEGETLPTEVLTEEVVLKTGDLQPLEQPTSEAVEAPLVGTPVCINGLML
+REMARK   3  ALN A TRG LEIKDTEKYCALAPNMMVTNNTFTLKGGAPTKVTFGDDTVIEVQGYKSVNITFELDER
+REMARK   3  ALN A TRG IDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDLDEWSMATYY
+REMARK   3  ALN A TRG LFDESGEFKLASHMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPLEFGA
+REMARK   3  ALN A TRG TSAALQPEEEQEEDWLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTPVVQT
+REMARK   3  ALN A TRG IEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVVNAANVYLKHGGGVAGALNKATN
+REMARK   3  ALN A TRG NAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYENF
+REMARK   3  ALN A TRG NQHEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSE
+REMARK   3  ALN A TRG KQVEQKIAEIPKEEVKPFITESKPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLL
+REMARK   3  ALN A TRG LYIDINGNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLTAVVIPTKKAGGTTEM
+REMARK   3  ALN A TRG LAKALRKVPTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGT
+REMARK   3  ALN A TRG VSWNLREMLAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSK
+REMARK   3  ALN A TRG TTVASLINTLNDLNETLVTMPLGYVTHGLNLEEAARYMRSLKVPATVSVSSPDAVTAY
+REMARK   3  ALN A TRG NGYLTSSSKTPEEHFIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYYTSNPTTF
+REMARK   3  ALN A TRG HLDGEVITFDNLKTLLSLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGA
+REMARK   3  ALN A TRG DVTKIKPHNSHEGKTFYVLPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKNWKYPQ
+REMARK   3  ALN A TRG VNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQDAYYRARAGEAANFCALILAYC
+REMARK   3  ALN A TRG NKTVGELGDVRETMSYLFQHANLDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSY
+REMARK   3  ALN A TRG EQFKKGVQIPCTCGKQATKYLVQQESPFVMMSAPPAQYELKHGTFTCASEYTGNYQCG
+REMARK   3  ALN A TRG HYKHITSKETLYCIDGALLTKSSEYKGPITDVFYKENSYTTTIKPVTYKLDGVVCTEI
+REMARK   3  ALN A TRG DPKLDNYYKKDNSYFTEQPIDLVPNQPYPNASFDNFKFVCDNIKFADDLNQLTGYKKP
+REMARK   3  ALN A TRG ASRELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVWHVNNATNKATYKPNTW
+REMARK   3  ALN A TRG CIRCLWSTKPVETSNSFDVLKSEDAQGMDNLACEDLKPVSEEVVENPTIQKDVLECNV
+REMARK   3  ALN A TRG KTTEVVGDIILKPANNSLKITEEVGHTDLMAAYVDNSSLTIKKPNELSRVLGLKTLAI
+REMARK   3  ALN A TRG HGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRCLNRVCTNYMPYFFTLLLQLCTF
+REMARK   3  ALN A TRG TRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYLKSPNFSKLINIIIWFLLLSVCL
+REMARK   3  ALN A TRG GSLIYSTAALGVLMSNLGMPSYCTGYREGYLNSTNVTIATYCTGSIPCSVCLSGLDSL
+REMARK   3  ALN A TRG DTYPSLETIQITISSFKWDLTAFGLVAEWFLAYILFTRFFYVLGLAAIMQLFFSYFAV
+REMARK   3  ALN A TRG HFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHVVDGCNSSTCMMCYK
+REMARK   3  ALN A TRG RNRATRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCAGSTFISDEVARD
+REMARK   3  ALN A TRG LSLQFKRPINPTDQSSYIVDSVTVKNGSIHLYFDKAGQKTYERHSLSHFVNLDNLRAN
+REMARK   3  ALN A TRG NTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALVSDVGDSAEVAV
+REMARK   3  ALN A TRG KMFDAYVNTFSSTFNVPMEKLKTLVATAEAELAKNVSLDNVLSTFISAARQGFVDSDV
+REMARK   3  ALN A TRG ETKDVVECLKLSHQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHINAQVA
+REMARK   3  ALN A TRG KSHNIALIWNVKDFMSLSEQLRKQIRSAAKKNNLPFKLTCATTRQVVNVVTTKIALKG
+REMARK   3  ALN A TRG GKIVNNWLKQLIKVTLVFLFVAAIFYLITPVHVMSKHTDFSSEIIGYKAIDGGVTRDI
+REMARK   3  ALN A TRG ASTDTCFANKHADFDTWFSQRGGSYTNDKACPLIAAVITREVGFVVPGLPGTILRTTN
+REMARK   3  ALN A TRG GDFLHFLPRVFSAVGNICYTPSKLIEYTDFATSACVLAAECTIFKDASGKPVPYCYDT
+REMARK   3  ALN A TRG NVLEGSVAYESLRPDTRYVLMDGSIIQFPNTYLEGSVRVVTTFDSEYCRHGTCERSEA
+REMARK   3  ALN A TRG GVCVSTSGRWVLNNDYYRSLPGVFCGVDAVNLFTNMFTPLIQPIGALDISASIVAGGI
+REMARK   3  ALN A TRG VAIVVTCLAYYFMRFRRAFGEYSHVVAFNTLLFLMSFTVLCLTPVYSFLPGVYSVIYL
+REMARK   3  ALN A TRG YLTFYLTNDVSFLAHIQWMVMFTPLVPFWITIAYIICISTKHFYWFFSNYLKRRVVFN
+REMARK   3  ALN A TRG GVSFSTFEEAALCTFLLNKEMYLKLRSDVLLPLTQYNRYLALYNKYKYFSGAMDTTSY
+REMARK   3  ALN A TRG REAACCHLAKALNDFSNSGSDVLYQPPQTSITSAVLQSGFRKMAFPSGKVEGCMVQVT
+REMARK   3  ALN A TRG CGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIG
+REMARK   3  ALN A TRG HSMQNCVLKLRVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIK
+REMARK   3  ALN A TRG GSFLNGSCGSVGFNIDYDCVSFCYMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAG
+REMARK   3  ALN A TRG TDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYEPLTQDHVDILGPL
+REMARK   3  ALN A TRG SAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQSAVKR
+REMARK   3  ALN A TRG TIKGTHHWLLLTILTSLLVLVQSTQWSLFFFLYENAFLPFAMGIIAMSAFAMMFVKHK
+REMARK   3  ALN A TRG HAFLCLFLLPSLATVAYFNMVYMPASWVMRIMTWLDMVDTSLKLKDCVMYASAVVLLI
+REMARK   3  ALN A TRG LMTARTVYDDGARRVWTLMNVLTLVYKVYYGNALDQAISMWALIISVTSNYSGVVTTV
+REMARK   3  ALN A TRG MFLARGIVFMCVEYCPIFFITGNTLQCIMLVYCFLGYFCTCYFGLFCLLNRYFRLTLG
+REMARK   3  ALN A TRG VYDYLVSTQEFRYMNSQGLPPKNSIDAFKLNIKLLGVGGKPCIKVATVQSKMSDVKCT
+REMARK   3  ALN A TRG SVVLLSVLQQLRVESSSKLWAQCVQLHNDILLADTTEAFEKMVSLLSVLLSMQGAVDI
+REMARK   3  ALN A TRG NKLCEEMLDNRATLQAIASEFSSLPSYAAFATAQEAYEQAVANGDSEVVLKKLKKSLN
+REMARK   3  ALN A TRG VAKSEFDRDAAMQRKLEKMADQAMTQMYKQARSEDKRAKVTSAMQTMLFTMLRKLDND
+REMARK   3  ALN A TRG ALNNIINNARDGCVPLNIIPLTTAAKLMVVIPDYNTYKNTCDGTTFTYASALWEIQQV
+REMARK   3  ALN A TRG VDADSKIVQLSEISMDNSPNLAWPLIVTALRANSAVKLQNNELSPVALRQMSCAAGTT
+REMARK   3  ALN A TRG QTACTDDNALAYYNTTKGGRFVLALLSDLQDLKWARFPKSDGTGTIYTELEPPCRFVT
+REMARK   3  ALN A TRG DTPKGPKVKYLYFIKGLNNLNRGMVLGSLAATVRLQAGNATEVPANSTVLSFCAFAVD
+REMARK   3  ALN A TRG AAKAYKDYLASGGQPITNCVKMLCTHTGTGQAITVTPEANMDQESFGGASCCLYCRCH
+REMARK   3  ALN A TRG IDHPNPKGFCDLKGKYVQIPTTCANDPVGFTLKNTVCTVCGMWKGYGCSCDQLREPML
+REMARK   3  ALN A TRG QSADAQSFLNGFAVVQPVLHRAAQALVLMSYTGLLTSTMIKLVLLNSKLIVVASKKRT
+REMARK   3  ALN A TRG KMTILILTL
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------MESLVPGFNEKTHVQLSLPVLQVRDVLVRGFGDSVE
+REMARK   3  ALN A TPL EVLSEARQHLKDGTCGLVEVEKGVLPQLEQPYVFIKRSDARTAPHGHVMVELVAELEG
+REMARK   3  ALN A TPL IQYGRSGETLGVLVPHVGEIPVAYRKVLLRKNGNKGAGGHSYGADLKSFDLGDELGTD
+REMARK   3  ALN A TPL PYEDFQENWNTKHSSGVTRELMRELNGG------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ----------------------------------------------------------
+REMARK   3  ALN A TPL ---------
+REMARK   3  ALN A OFF 0
+ATOM      1  N   ASP A 232     305.128 188.428 242.909  1.00  0.65           N  
+ATOM      2  CA  ASP A 232     304.958 187.744 244.241  1.00  0.65           C  
+ATOM      3  C   ASP A 232     303.472 187.693 244.633  1.00  0.65           C  
+ATOM      4  O   ASP A 232     302.748 188.604 244.244  1.00  0.65           O  
+ATOM      5  CB  ASP A 232     305.800 188.480 245.332  1.00  0.65           C  
+ATOM      6  CG  ASP A 232     305.342 189.926 245.359  1.00  0.65           C  
+ATOM      7  OD1 ASP A 232     305.623 190.608 244.349  1.00  0.65           O  
+ATOM      8  OD2 ASP A 232     304.584 190.270 246.294  1.00  0.65           O  
+ATOM      9  N   PRO A 233     302.954 186.723 245.387  1.00  0.69           N  
+ATOM     10  CA  PRO A 233     301.516 186.542 245.589  1.00  0.69           C  
+ATOM     11  C   PRO A 233     300.942 187.621 246.499  1.00  0.69           C  
+ATOM     12  O   PRO A 233     299.738 187.864 246.450  1.00  0.69           O  
+ATOM     13  CB  PRO A 233     301.405 185.134 246.202  1.00  0.69           C  
+ATOM     14  CG  PRO A 233     302.756 184.952 246.891  1.00  0.69           C  
+ATOM     15  CD  PRO A 233     303.705 185.586 245.889  1.00  0.69           C  
+ATOM     16  N   TYR A 234     301.781 188.260 247.349  1.00  0.65           N  
+ATOM     17  CA  TYR A 234     301.411 189.390 248.190  1.00  0.65           C  
+ATOM     18  C   TYR A 234     300.969 190.606 247.388  1.00  0.65           C  
+ATOM     19  O   TYR A 234     299.820 191.032 247.513  1.00  0.65           O  
+ATOM     20  CB  TYR A 234     302.572 189.808 249.138  1.00  0.65           C  
+ATOM     21  CG  TYR A 234     302.741 188.824 250.264  1.00  0.65           C  
+ATOM     22  CD1 TYR A 234     301.825 188.833 251.328  1.00  0.65           C  
+ATOM     23  CD2 TYR A 234     303.830 187.938 250.316  1.00  0.65           C  
+ATOM     24  CE1 TYR A 234     302.013 188.002 252.441  1.00  0.65           C  
+ATOM     25  CE2 TYR A 234     304.016 187.100 251.427  1.00  0.65           C  
+ATOM     26  CZ  TYR A 234     303.118 187.152 252.498  1.00  0.65           C  
+ATOM     27  OH  TYR A 234     303.341 186.393 253.663  1.00  0.65           O  
+ATOM     28  N   GLU A 235     301.820 191.132 246.486  1.00  0.63           N  
+ATOM     29  CA  GLU A 235     301.463 192.185 245.557  1.00  0.63           C  
+ATOM     30  C   GLU A 235     300.408 191.779 244.539  1.00  0.63           C  
+ATOM     31  O   GLU A 235     299.492 192.550 244.251  1.00  0.63           O  
+ATOM     32  CB  GLU A 235     302.715 192.855 244.930  1.00  0.63           C  
+ATOM     33  CG  GLU A 235     303.597 193.585 245.986  1.00  0.63           C  
+ATOM     34  CD  GLU A 235     302.881 194.716 246.734  1.00  0.63           C  
+ATOM     35  OE1 GLU A 235     301.772 195.137 246.316  1.00  0.63           O  
+ATOM     36  OE2 GLU A 235     303.442 195.167 247.765  1.00  0.63           O  
+ATOM     37  N   ASP A 236     300.420 190.530 244.011  1.00  0.62           N  
+ATOM     38  CA  ASP A 236     299.358 190.037 243.142  1.00  0.62           C  
+ATOM     39  C   ASP A 236     297.985 190.134 243.827  1.00  0.62           C  
+ATOM     40  O   ASP A 236     297.034 190.667 243.257  1.00  0.62           O  
+ATOM     41  CB  ASP A 236     299.607 188.566 242.687  1.00  0.62           C  
+ATOM     42  CG  ASP A 236     300.857 188.387 241.828  1.00  0.62           C  
+ATOM     43  OD1 ASP A 236     301.353 189.378 241.244  1.00  0.62           O  
+ATOM     44  OD2 ASP A 236     301.341 187.226 241.744  1.00  0.62           O  
+ATOM     45  N   PHE A 237     297.852 189.708 245.105  1.00  0.66           N  
+ATOM     46  CA  PHE A 237     296.659 189.958 245.900  1.00  0.66           C  
+ATOM     47  C   PHE A 237     296.381 191.448 246.119  1.00  0.66           C  
+ATOM     48  O   PHE A 237     295.267 191.901 245.867  1.00  0.66           O  
+ATOM     49  CB  PHE A 237     296.744 189.207 247.256  1.00  0.66           C  
+ATOM     50  CG  PHE A 237     295.479 189.361 248.081  1.00  0.66           C  
+ATOM     51  CD1 PHE A 237     294.307 188.668 247.737  1.00  0.66           C  
+ATOM     52  CD2 PHE A 237     295.440 190.246 249.175  1.00  0.66           C  
+ATOM     53  CE1 PHE A 237     293.123 188.860 248.463  1.00  0.66           C  
+ATOM     54  CE2 PHE A 237     294.265 190.413 249.921  1.00  0.66           C  
+ATOM     55  CZ  PHE A 237     293.106 189.717 249.566  1.00  0.66           C  
+ATOM     56  N   GLN A 238     297.377 192.261 246.524  1.00  0.65           N  
+ATOM     57  CA  GLN A 238     297.203 193.685 246.769  1.00  0.65           C  
+ATOM     58  C   GLN A 238     296.715 194.510 245.572  1.00  0.65           C  
+ATOM     59  O   GLN A 238     295.877 195.393 245.740  1.00  0.65           O  
+ATOM     60  CB  GLN A 238     298.433 194.346 247.456  1.00  0.65           C  
+ATOM     61  CG  GLN A 238     298.600 193.906 248.940  1.00  0.65           C  
+ATOM     62  CD  GLN A 238     299.516 194.775 249.808  1.00  0.65           C  
+ATOM     63  OE1 GLN A 238     299.828 194.409 250.944  1.00  0.65           O  
+ATOM     64  NE2 GLN A 238     299.939 195.952 249.318  1.00  0.65           N  
+ATOM     65  N   GLU A 239     297.176 194.246 244.345  1.00  0.63           N  
+ATOM     66  CA  GLU A 239     296.770 194.946 243.141  1.00  0.63           C  
+ATOM     67  C   GLU A 239     295.552 194.339 242.410  1.00  0.63           C  
+ATOM     68  O   GLU A 239     294.766 195.034 241.768  1.00  0.63           O  
+ATOM     69  CB  GLU A 239     297.992 194.960 242.190  1.00  0.63           C  
+ATOM     70  CG  GLU A 239     299.228 195.713 242.755  1.00  0.63           C  
+ATOM     71  CD  GLU A 239     298.899 197.181 243.014  1.00  0.63           C  
+ATOM     72  OE1 GLU A 239     298.201 197.776 242.151  1.00  0.63           O  
+ATOM     73  OE2 GLU A 239     299.333 197.732 244.054  1.00  0.63           O  
+ATOM     74  N   ASN A 240     295.323 193.005 242.502  1.00  0.63           N  
+ATOM     75  CA  ASN A 240     294.264 192.307 241.773  1.00  0.63           C  
+ATOM     76  C   ASN A 240     293.102 191.851 242.665  1.00  0.63           C  
+ATOM     77  O   ASN A 240     292.269 191.055 242.242  1.00  0.63           O  
+ATOM     78  CB  ASN A 240     294.818 191.111 240.935  1.00  0.63           C  
+ATOM     79  CG  ASN A 240     295.389 191.588 239.604  1.00  0.63           C  
+ATOM     80  OD1 ASN A 240     294.616 191.840 238.676  1.00  0.63           O  
+ATOM     81  ND2 ASN A 240     296.727 191.694 239.466  1.00  0.63           N  
+ATOM     82  N   TRP A 241     292.941 192.355 243.910  1.00  0.61           N  
+ATOM     83  CA  TRP A 241     291.810 191.976 244.756  1.00  0.61           C  
+ATOM     84  C   TRP A 241     290.419 192.404 244.238  1.00  0.61           C  
+ATOM     85  O   TRP A 241     289.419 191.756 244.525  1.00  0.61           O  
+ATOM     86  CB  TRP A 241     291.985 192.410 246.246  1.00  0.61           C  
+ATOM     87  CG  TRP A 241     291.855 193.902 246.531  1.00  0.61           C  
+ATOM     88  CD1 TRP A 241     292.780 194.897 246.465  1.00  0.61           C  
+ATOM     89  CD2 TRP A 241     290.618 194.547 246.880  1.00  0.61           C  
+ATOM     90  NE1 TRP A 241     292.217 196.126 246.755  1.00  0.61           N  
+ATOM     91  CE2 TRP A 241     290.879 195.914 247.023  1.00  0.61           C  
+ATOM     92  CE3 TRP A 241     289.346 194.025 247.063  1.00  0.61           C  
+ATOM     93  CZ2 TRP A 241     289.863 196.809 247.373  1.00  0.61           C  
+ATOM     94  CZ3 TRP A 241     288.319 194.917 247.389  1.00  0.61           C  
+ATOM     95  CH2 TRP A 241     288.572 196.282 247.558  1.00  0.61           C  
+ATOM     96  N   ASN A 242     290.333 193.524 243.485  1.00  0.63           N  
+ATOM     97  CA  ASN A 242     289.099 194.138 243.012  1.00  0.63           C  
+ATOM     98  C   ASN A 242     288.879 193.908 241.518  1.00  0.63           C  
+ATOM     99  O   ASN A 242     287.911 194.368 240.920  1.00  0.63           O  
+ATOM    100  CB  ASN A 242     289.202 195.669 243.276  1.00  0.63           C  
+ATOM    101  CG  ASN A 242     287.868 196.215 243.767  1.00  0.63           C  
+ATOM    102  OD1 ASN A 242     286.800 195.657 243.559  1.00  0.63           O  
+ATOM    103  ND2 ASN A 242     287.912 197.364 244.479  1.00  0.63           N  
+ATOM    104  N   THR A 243     289.799 193.196 240.851  1.00  0.67           N  
+ATOM    105  CA  THR A 243     289.735 192.939 239.423  1.00  0.67           C  
+ATOM    106  C   THR A 243     289.098 191.583 239.199  1.00  0.67           C  
+ATOM    107  O   THR A 243     288.658 190.897 240.119  1.00  0.67           O  
+ATOM    108  CB  THR A 243     291.095 193.007 238.719  1.00  0.67           C  
+ATOM    109  OG1 THR A 243     291.982 192.032 239.250  1.00  0.67           O  
+ATOM    110  CG2 THR A 243     291.703 194.408 238.903  1.00  0.67           C  
+ATOM    111  N   LYS A 244     289.045 191.134 237.936  1.00  0.64           N  
+ATOM    112  CA  LYS A 244     288.524 189.845 237.535  1.00  0.64           C  
+ATOM    113  C   LYS A 244     289.282 188.637 238.114  1.00  0.64           C  
+ATOM    114  O   LYS A 244     288.726 187.554 238.271  1.00  0.64           O  
+ATOM    115  CB  LYS A 244     288.585 189.822 235.987  1.00  0.64           C  
+ATOM    116  CG  LYS A 244     288.206 188.481 235.337  1.00  0.64           C  
+ATOM    117  CD  LYS A 244     288.483 188.443 233.826  1.00  0.64           C  
+ATOM    118  CE  LYS A 244     288.789 187.033 233.300  1.00  0.64           C  
+ATOM    119  NZ  LYS A 244     289.161 187.098 231.867  1.00  0.64           N  
+ATOM    120  N   HIS A 245     290.584 188.787 238.441  1.00  0.66           N  
+ATOM    121  CA  HIS A 245     291.452 187.699 238.866  1.00  0.66           C  
+ATOM    122  C   HIS A 245     291.501 187.578 240.385  1.00  0.66           C  
+ATOM    123  O   HIS A 245     292.358 186.881 240.928  1.00  0.66           O  
+ATOM    124  CB  HIS A 245     292.870 187.867 238.274  1.00  0.66           C  
+ATOM    125  CG  HIS A 245     292.856 187.675 236.787  1.00  0.66           C  
+ATOM    126  ND1 HIS A 245     293.433 186.533 236.273  1.00  0.66           N  
+ATOM    127  CD2 HIS A 245     292.399 188.461 235.780  1.00  0.66           C  
+ATOM    128  CE1 HIS A 245     293.336 186.645 234.972  1.00  0.66           C  
+ATOM    129  NE2 HIS A 245     292.717 187.796 234.615  1.00  0.66           N  
+ATOM    130  N   SER A 246     290.564 188.219 241.119  1.00  0.64           N  
+ATOM    131  CA  SER A 246     290.518 188.317 242.579  1.00  0.64           C  
+ATOM    132  C   SER A 246     290.516 186.979 243.315  1.00  0.64           C  
+ATOM    133  O   SER A 246     291.293 186.752 244.243  1.00  0.64           O  
+ATOM    134  CB  SER A 246     289.281 189.133 243.053  1.00  0.64           C  
+ATOM    135  OG  SER A 246     288.034 188.544 242.678  1.00  0.64           O  
+ATOM    136  N   SER A 247     289.665 186.036 242.857  1.00  0.64           N  
+ATOM    137  CA  SER A 247     289.555 184.646 243.300  1.00  0.64           C  
+ATOM    138  C   SER A 247     290.817 183.830 243.051  1.00  0.64           C  
+ATOM    139  O   SER A 247     291.233 183.025 243.883  1.00  0.64           O  
+ATOM    140  CB  SER A 247     288.330 183.904 242.694  1.00  0.64           C  
+ATOM    141  OG  SER A 247     288.330 183.956 241.269  1.00  0.64           O  
+ATOM    142  N   GLY A 248     291.485 184.047 241.898  1.00  0.66           N  
+ATOM    143  CA  GLY A 248     292.732 183.381 241.537  1.00  0.66           C  
+ATOM    144  C   GLY A 248     293.927 183.822 242.355  1.00  0.66           C  
+ATOM    145  O   GLY A 248     294.688 182.977 242.828  1.00  0.66           O  
+ATOM    146  N   VAL A 249     294.105 185.146 242.572  1.00  0.65           N  
+ATOM    147  CA  VAL A 249     295.149 185.720 243.425  1.00  0.65           C  
+ATOM    148  C   VAL A 249     294.992 185.401 244.911  1.00  0.65           C  
+ATOM    149  O   VAL A 249     295.973 185.074 245.572  1.00  0.65           O  
+ATOM    150  CB  VAL A 249     295.415 187.214 243.197  1.00  0.65           C  
+ATOM    151  CG1 VAL A 249     295.797 187.423 241.717  1.00  0.65           C  
+ATOM    152  CG2 VAL A 249     294.243 188.126 243.616  1.00  0.65           C  
+ATOM    153  N   THR A 250     293.759 185.435 245.482  1.00  0.66           N  
+ATOM    154  CA  THR A 250     293.486 185.014 246.870  1.00  0.66           C  
+ATOM    155  C   THR A 250     293.749 183.532 247.090  1.00  0.66           C  
+ATOM    156  O   THR A 250     294.381 183.146 248.071  1.00  0.66           O  
+ATOM    157  CB  THR A 250     292.117 185.452 247.425  1.00  0.66           C  
+ATOM    158  OG1 THR A 250     292.048 185.347 248.840  1.00  0.66           O  
+ATOM    159  CG2 THR A 250     290.920 184.682 246.864  1.00  0.66           C  
+ATOM    160  N   ARG A 251     293.353 182.649 246.139  1.00  0.64           N  
+ATOM    161  CA  ARG A 251     293.675 181.226 246.168  1.00  0.64           C  
+ATOM    162  C   ARG A 251     295.171 180.978 246.150  1.00  0.64           C  
+ATOM    163  O   ARG A 251     295.679 180.171 246.926  1.00  0.64           O  
+ATOM    164  CB  ARG A 251     293.086 180.500 244.926  1.00  0.64           C  
+ATOM    165  CG  ARG A 251     293.426 178.994 244.784  1.00  0.64           C  
+ATOM    166  CD  ARG A 251     293.234 178.444 243.364  1.00  0.64           C  
+ATOM    167  NE  ARG A 251     294.378 178.993 242.539  1.00  0.64           N  
+ATOM    168  CZ  ARG A 251     294.442 178.993 241.201  1.00  0.64           C  
+ATOM    169  NH1 ARG A 251     293.428 178.518 240.486  1.00  0.64           N  
+ATOM    170  NH2 ARG A 251     295.504 179.493 240.572  1.00  0.64           N  
+ATOM    171  N   GLU A 252     295.904 181.685 245.259  1.00  0.65           N  
+ATOM    172  CA  GLU A 252     297.348 181.630 245.187  1.00  0.65           C  
+ATOM    173  C   GLU A 252     298.018 182.113 246.457  1.00  0.65           C  
+ATOM    174  O   GLU A 252     298.837 181.414 247.050  1.00  0.65           O  
+ATOM    175  CB  GLU A 252     297.865 182.430 243.963  1.00  0.65           C  
+ATOM    176  CG  GLU A 252     299.307 182.027 243.596  1.00  0.65           C  
+ATOM    177  CD  GLU A 252     299.352 180.544 243.207  1.00  0.65           C  
+ATOM    178  OE1 GLU A 252     298.274 179.932 242.918  1.00  0.65           O  
+ATOM    179  OE2 GLU A 252     300.448 179.953 243.196  1.00  0.65           O  
+ATOM    180  N   LEU A 253     297.600 183.277 246.988  1.00  0.69           N  
+ATOM    181  CA  LEU A 253     298.065 183.796 248.261  1.00  0.69           C  
+ATOM    182  C   LEU A 253     297.833 182.832 249.430  1.00  0.69           C  
+ATOM    183  O   LEU A 253     298.753 182.552 250.195  1.00  0.69           O  
+ATOM    184  CB  LEU A 253     297.383 185.158 248.564  1.00  0.69           C  
+ATOM    185  CG  LEU A 253     297.763 185.796 249.921  1.00  0.69           C  
+ATOM    186  CD1 LEU A 253     299.268 186.109 250.026  1.00  0.69           C  
+ATOM    187  CD2 LEU A 253     296.912 187.041 250.214  1.00  0.69           C  
+ATOM    188  N   MET A 254     296.624 182.243 249.572  1.00  0.70           N  
+ATOM    189  CA  MET A 254     296.333 181.230 250.581  1.00  0.70           C  
+ATOM    190  C   MET A 254     297.141 179.952 250.450  1.00  0.70           C  
+ATOM    191  O   MET A 254     297.554 179.359 251.445  1.00  0.70           O  
+ATOM    192  CB  MET A 254     294.821 180.888 250.679  1.00  0.70           C  
+ATOM    193  CG  MET A 254     294.030 181.880 251.559  1.00  0.70           C  
+ATOM    194  SD  MET A 254     294.659 182.003 253.271  1.00  0.70           S  
+ATOM    195  CE  MET A 254     293.404 183.142 253.897  1.00  0.70           C  
+ATOM    196  N   ARG A 255     297.406 179.497 249.216  1.00  0.68           N  
+ATOM    197  CA  ARG A 255     298.283 178.377 248.957  1.00  0.68           C  
+ATOM    198  C   ARG A 255     299.723 178.608 249.446  1.00  0.68           C  
+ATOM    199  O   ARG A 255     300.283 177.767 250.141  1.00  0.68           O  
+ATOM    200  CB  ARG A 255     298.246 178.111 247.438  1.00  0.68           C  
+ATOM    201  CG  ARG A 255     299.019 176.866 246.986  1.00  0.68           C  
+ATOM    202  CD  ARG A 255     299.082 176.737 245.461  1.00  0.68           C  
+ATOM    203  NE  ARG A 255     297.858 175.958 245.065  1.00  0.68           N  
+ATOM    204  CZ  ARG A 255     297.246 176.052 243.879  1.00  0.68           C  
+ATOM    205  NH1 ARG A 255     297.585 176.977 242.992  1.00  0.68           N  
+ATOM    206  NH2 ARG A 255     296.299 175.163 243.570  1.00  0.68           N  
+ATOM    207  N   GLU A 256     300.325 179.780 249.153  1.00  0.69           N  
+ATOM    208  CA  GLU A 256     301.630 180.219 249.640  1.00  0.69           C  
+ATOM    209  C   GLU A 256     301.684 180.430 251.156  1.00  0.69           C  
+ATOM    210  O   GLU A 256     302.618 180.003 251.828  1.00  0.69           O  
+ATOM    211  CB  GLU A 256     302.012 181.522 248.909  1.00  0.69           C  
+ATOM    212  CG  GLU A 256     302.158 181.328 247.383  1.00  0.69           C  
+ATOM    213  CD  GLU A 256     303.584 180.955 246.994  1.00  0.69           C  
+ATOM    214  OE1 GLU A 256     304.518 181.670 247.440  1.00  0.69           O  
+ATOM    215  OE2 GLU A 256     303.762 179.965 246.245  1.00  0.69           O  
+ATOM    216  N   LEU A 257     300.647 181.063 251.750  1.00  0.73           N  
+ATOM    217  CA  LEU A 257     300.494 181.260 253.192  1.00  0.73           C  
+ATOM    218  C   LEU A 257     300.371 179.989 254.019  1.00  0.73           C  
+ATOM    219  O   LEU A 257     300.960 179.894 255.094  1.00  0.73           O  
+ATOM    220  CB  LEU A 257     299.331 182.229 253.534  1.00  0.73           C  
+ATOM    221  CG  LEU A 257     299.671 183.717 253.287  1.00  0.73           C  
+ATOM    222  CD1 LEU A 257     298.430 184.599 253.490  1.00  0.73           C  
+ATOM    223  CD2 LEU A 257     300.810 184.223 254.192  1.00  0.73           C  
+ATOM    224  N   ASN A 258     299.624 178.973 253.544  1.00  0.70           N  
+ATOM    225  CA  ASN A 258     299.455 177.736 254.287  1.00  0.70           C  
+ATOM    226  C   ASN A 258     300.516 176.698 253.905  1.00  0.70           C  
+ATOM    227  O   ASN A 258     300.758 175.758 254.654  1.00  0.70           O  
+ATOM    228  CB  ASN A 258     298.029 177.161 254.062  1.00  0.70           C  
+ATOM    229  CG  ASN A 258     296.992 178.133 254.624  1.00  0.70           C  
+ATOM    230  OD1 ASN A 258     297.214 178.863 255.582  1.00  0.70           O  
+ATOM    231  ND2 ASN A 258     295.777 178.137 254.021  1.00  0.70           N  
+ATOM    232  N   GLY A 259     301.225 176.887 252.766  1.00  0.53           N  
+ATOM    233  CA  GLY A 259     302.314 176.026 252.297  1.00  0.53           C  
+ATOM    234  C   GLY A 259     301.975 174.577 252.015  1.00  0.53           C  
+ATOM    235  O   GLY A 259     300.871 174.242 251.588  1.00  0.53           O  
+ATOM    236  N   GLY A 260     302.944 173.666 252.189  1.00  0.49           N  
+ATOM    237  CA  GLY A 260     302.777 172.250 251.974  1.00  0.49           C  
+ATOM    238  C   GLY A 260     304.147 171.604 252.220  1.00  0.49           C  
+ATOM    239  O   GLY A 260     305.111 172.357 252.541  1.00  0.49           O  
+ATOM    240  OXT GLY A 260     304.246 170.357 252.091  1.00  0.49           O  
+TER     241      GLY A 260                                                      
+END   
